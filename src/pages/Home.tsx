@@ -44,10 +44,20 @@ const Home = () => {
                 <ArrowRight className="ml-2 w-5 h-5" />
               </Button>
             </Link>
-            <Button variant="outline" size="lg" className="border-primary/50 hover:bg-primary/10">
-              <Download className="mr-2 w-5 h-5" />
-              Download Resume
-            </Button>
+            <a 
+  href="https://drive.google.com/uc?export=download&id=1UNrU_Goa5vs05NWfrDRBZ1wzkoPqUo0N" 
+  download="resume_sabari.pdf"
+>
+  <Button 
+    variant="outline" 
+    size="lg" 
+    className="border-primary/50 hover:bg-primary/10"
+  >
+    <Download className="mr-2 w-5 h-5" />
+    Download Resume
+  </Button>
+</a>
+
           </div>
         </div>
       </Section>
