@@ -1,3 +1,4 @@
+/*
 import Layout from '@/components/layout/Layout';
 import Section from '@/components/ui/section';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
@@ -81,7 +82,7 @@ const SaasProducts = () => {
           </p>
         </div>
 
-        {/* Metrics Overview */}
+        {/* Metrics Overview }
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
           {metrics.map((metric, index) => {
             const Icon = metric.icon;
@@ -99,13 +100,13 @@ const SaasProducts = () => {
           })}
         </div>
 
-        {/* Products */}
+        {/* Products /}
         <div className="space-y-8">
           {products.map((product, index) => (
             <Card key={product.name} className="glass hover:glow transition-all duration-500 animate-slide-up" style={{ animationDelay: `${index * 0.2}s` }}>
               <CardContent className="p-8">
                 <div className="grid lg:grid-cols-3 gap-8 items-start">
-                  {/* Product Info */}
+                  {/* Product Info /}
                   <div className="lg:col-span-2">
                     <div className="flex items-start gap-4 mb-6">
                       <div className="text-4xl">{product.logo}</div>
@@ -148,7 +149,7 @@ const SaasProducts = () => {
                     </Button>
                   </div>
 
-                  {/* Metrics */}
+                  {/* Metrics /}
                   <div className="space-y-4">
                     <div className="glass p-4 rounded-lg">
                       <div className="text-center">
@@ -181,7 +182,7 @@ const SaasProducts = () => {
           ))}
         </div>
 
-        {/* Journey Section */}
+        {/* Journey Section /}
         <Section className="bg-background-secondary/50 mt-16 -mx-4 sm:-mx-6 lg:-mx-8">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold mb-6">
@@ -213,7 +214,7 @@ const SaasProducts = () => {
           </div>
         </Section>
 
-        {/* Call to Action */}
+        {/* Call to Action /}
         <div className="text-center mt-16">
           <div className="glass p-8 rounded-2xl max-w-2xl mx-auto">
             <h3 className="text-2xl font-bold mb-4 gradient-text">Interested in My Products?</h3>
@@ -229,6 +230,29 @@ const SaasProducts = () => {
               </Button>
             </div>
           </div>
+        </div>
+      </Section>
+    </Layout>
+  );
+};
+
+export default SaasProducts;
+*/
+import Layout from '@/components/layout/Layout';
+import Section from '@/components/ui/section';
+
+const SaasProducts = () => {
+  return (
+    <Layout>
+      <Section>
+        <div className="text-center py-24 animate-fade-in">
+          <h1 className="text-6xl font-bold mb-6">
+            <span className="gradient-text">🚧 Coming Soon 🚧</span>
+          </h1>
+          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+            The SaaS Products page is currently under construction. 
+            Stay tuned for exciting updates!
+          </p>
         </div>
       </Section>
     </Layout>
