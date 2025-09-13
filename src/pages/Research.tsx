@@ -1,3 +1,4 @@
+/*
 import Layout from '@/components/layout/Layout';
 import Section from '@/components/ui/section';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
@@ -106,7 +107,7 @@ const Research = () => {
           </p>
         </div>
 
-        {/* Research Areas */}
+        { Research Areas } put these titles in comment format . since it an commented i hvae remove it
         <div className="mb-16">
           <h2 className="text-3xl font-bold mb-8 text-center">
             <span className="gradient-text">Research Areas</span>
@@ -129,7 +130,7 @@ const Research = () => {
           </div>
         </div>
 
-        {/* Publications */}
+        //{ Publications } put these titles in comment format . since it an commented i hvae remove it 
         <div className="mb-16">
           <h2 className="text-3xl font-bold mb-8 text-center">
             <span className="gradient-text">Publications</span>
@@ -181,7 +182,7 @@ const Research = () => {
           </div>
         </div>
 
-        {/* Conference Presentations */}
+        { Conference Presentations }put these titles in comment format . since it an commented i hvae remove it
         <div>
           <h2 className="text-3xl font-bold mb-8 text-center">
             <span className="gradient-text">Conference Presentations</span>
@@ -206,7 +207,7 @@ const Research = () => {
           </div>
         </div>
 
-        {/* Call to Action */}
+        {/* Call to Action }put these titles in comment format . since it an commented i hvae remove it
         <div className="text-center mt-16">
           <div className="glass p-8 rounded-2xl max-w-2xl mx-auto">
             <h3 className="text-2xl font-bold mb-4 gradient-text">Interested in Collaboration?</h3>
@@ -219,6 +220,42 @@ const Research = () => {
             </Button>
           </div>
         </div>
+      </Section>
+    </Layout>
+  );
+};
+
+export default Research;
+*/
+import Layout from '@/components/layout/Layout';
+import Section from '@/components/ui/section';
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { Clock } from 'lucide-react';
+
+const Research = () => {
+  return (
+    <Layout>
+      <Section>
+        <div className="text-center mb-12 animate-fade-in">
+          <h1 className="text-5xl font-bold mb-6">
+            <span className="gradient-text">Research</span>
+          </h1>
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+            Exciting research updates are on the way.
+          </p>
+        </div>
+
+        <Card className="glass mx-auto max-w-xl animate-fade-in">
+          <CardHeader>
+            <CardTitle className="text-2xl text-center gradient-text">
+              <Clock className="inline-block w-6 h-6 mr-2" />
+              Feature Coming Soon
+            </CardTitle>
+          </CardHeader>
+          <CardContent className="text-center text-muted-foreground">
+            This section is under construction. Stay tuned for upcoming publications, research areas, and conference presentations.
+          </CardContent>
+        </Card>
       </Section>
     </Layout>
   );
